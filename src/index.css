@@ -1,0 +1,23 @@
+@import "tailwindcss";
+/* 
+// <weight>: Use a value from 300 to 700
+// <uniquifier>: Use a unique and descriptive class name */
+
+/* // <weight>: Use a value from 300 to 700
+// <uniquifier>: Use a unique and descriptive class name */
+
+* {
+    background-color: #ffffff;
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    color: rgb(0, 0, 0);
+    font-style: normal;
+    letter-spacing: normal;
+}
+
+.bold-font {
+    /* For custom bolder fonts used here ..  */
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: 650;
+}
