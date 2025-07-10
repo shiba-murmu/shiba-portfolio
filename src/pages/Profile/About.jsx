@@ -1,15 +1,15 @@
 import React from 'react'
-
+import './about.css';
 function ProfileIntroduction() {
     return (
         <>
-            <div className='text-center'>
-                <span>
+            <div className='text-center m-3'>
+                <span className='introName'>
                     Shiba Murmu – Software Engineer.
                 </span>
                 <br />
                 <p>
-                    Specializing in full-stack web development, problem-solving, and clean, maintainable code.
+                    Specializing in full-stack web <br /> development, problem-solving, <br /> and clean, maintainable code.
                 </p>
             </div>
         </>
@@ -19,7 +19,11 @@ function ProfileIntroduction() {
 function AboutEducation() {
     return (
         <>
-            <div>About my educations here....</div>
+            <div className='flex flex-col justify-center items-center'>
+                <secton>Engineering</secton>
+                <secton>Secondary school</secton>
+                <secton>primary school</secton>
+            </div>
         </>
     )
 }
