@@ -1,6 +1,8 @@
 import React from 'react'
 import Profile from './pages/Profile/Profile'
-function App() {
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+function Main() {
     return (
         <>
             <div>
@@ -11,6 +13,17 @@ function App() {
                 <section>Projects</section>
                 <section>Contactus</section>
             </div>
+        </>
+    )
+}
+function App() {
+    return (
+        <>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Main />} />
+                </Routes>
+            </BrowserRouter>
         </>
     )
 }

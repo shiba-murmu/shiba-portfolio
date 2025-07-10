@@ -10,8 +10,8 @@
     background-color: #ffffff;
     font-family: "Red Hat Text", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 450;
-    color: rgb(0, 0, 0);
+    /* font-weight: 450; */
+    /* color: rgb(0, 0, 0); */
     font-style: normal;
     letter-spacing: normal;
 }
