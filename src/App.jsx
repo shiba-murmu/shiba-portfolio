@@ -6,7 +6,7 @@ import SkillDetails from './pages/Skills/SkillDetails';
 import Project from './pages/Projects/Project';
 import Contact_Us from './contact_us/Contact_Us';
 import ProjectDetails from './pages/Projects/ProjectDetails';
-
+import { ToastContainer } from 'react-toastify';
 function Main() {
     return (
         <>
@@ -31,6 +31,7 @@ function App() {
     return (
         <>
             <BrowserRouter>
+                <ToastContainer />
                 <Routes>
                     <Route path="/" element={<Main />} />
                     <Route path="/education" element={<EduationDetails />} />
