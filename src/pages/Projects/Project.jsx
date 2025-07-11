@@ -83,7 +83,14 @@ function Project() {
                         </span>
                     </div>
                 </Link>
-                <ProjectSpecific />
+                <div className='md:hidden'>
+                    <ProjectSpecific />
+                </div>
+                <div className='hidden md:flex flex-wrap justify-center items-center gap-5 '>
+                    <ProjectSpecific />
+                    <ProjectSpecific />
+                    <ProjectSpecific />
+                </div>
             </div>
         </>
     )
