@@ -3,6 +3,7 @@ import python_icon from '/src/assets/python.png';
 import javascript_icon from '/src/assets/javascript.png';
 import react_icon from '/src/assets/react.png';
 import Icons from '../../components/Icons';
+import Git from '/src/assets/Git.png';
 
 function Skills({ value }) {
     const SkillsIcons = (val) => {
@@ -60,6 +61,17 @@ function Skills({ value }) {
                         </div>
                     </>
                 )
+            
+            case 'Git':
+                return (
+                    <>
+                        <div className='flex rounded-full shadow-md  hover:cursor-pointer p-3 justify-evenly items-center animate-pulse hover:animate-none'>
+                            <div>
+                                <img src={Git} alt="Git skills" className='w-10 h-10' />
+                            </div>
+                        </div>
+                    </>
+                )
             default:
                 return null
         }
@@ -86,8 +98,8 @@ function SkillDetails() {
                         <Skills value='django' />
                         <Skills value='react' />
                         <Skills value='javascript' />
-                        <Skills value='react' />
                         <Skills value='tailwind' />
+                        <Skills value='Git' />
                     </section>
                 </div>
             </div>
