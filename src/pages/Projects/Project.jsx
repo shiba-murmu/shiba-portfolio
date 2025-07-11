@@ -40,11 +40,11 @@ function ProjectSpecific() {
             <div>
                 <div className='flex justify-center items-center'>
                     {/* For heading purpose  */}
-                    <span className='text-2xl bold-font introName'>ChiChat Web App</span>
+                    <span className='text-2xl md:text-4xl bold-font introName'>ChiChat Web App</span>
                 </div>
                 <div className='flex justify-center items-center mt-2'>
                     {/* For image purpose */}
-                    <img src={chichat_image} alt="project image" className='w-80 h-40 shadow-md rounded-2xl border border-gray-700' />
+                    <img src={chichat_image} alt="project image" className='w-80 h-40 md:w-[35rem] md:h-[17rem] shadow-md rounded-2xl border md:border-3 border-gray-700' />
                 </div>
                 <div className='flex justify-evenly mt-5'>
                     {/* For buttons purpose */}
@@ -74,7 +74,7 @@ function Project() {
     return (
         <>
             <div className='mt-10 flex flex-col justify-center items-center gap-5'>
-                <Link to={'/projectdetails'}>
+                <Link to={'/projectdetails'} className='md:hidden'>
 
                     <div className='flex justify-center w-44 items-center border-1 rounded-full gap-3 p-4'>
                         <span className='bold-font'>Projects</span>
@@ -83,10 +83,13 @@ function Project() {
                         </span>
                     </div>
                 </Link>
+                <div className='hidden not-only:md md:flex justify-start w-full items-center gap-3 pl-35 mb-20'>
+                    <span className='bold-font introName text-4xl'>Projects</span>
+                </div>
                 <div className='md:hidden'>
                     <ProjectSpecific />
                 </div>
-                <div className='hidden md:flex flex-wrap justify-center items-center gap-5 '>
+                <div className='hidden md:flex flex-wrap justify-center items-center gap-5 md:gap-20'>
                     <ProjectSpecific />
                     <ProjectSpecific />
                     <ProjectSpecific />
