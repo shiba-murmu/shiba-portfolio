@@ -7,7 +7,8 @@ function ProfilePhoto() {
             {/* Main container */}
             <div className=' bg-white flex justify-center items-center'>
                 {/* sub-container */}
-                <img src={profilePicture} alt="Profile image" className='h-60 rounded-full'/>
+                {/* mask-b-from-10% mask-b-to-90%   For the mask the image */}
+                <img src={profilePicture} alt="Profile image" className='h-60   rounded-full'/>
             </div>
         </div>
     </>

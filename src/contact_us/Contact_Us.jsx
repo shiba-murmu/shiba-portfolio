@@ -14,7 +14,7 @@ function ContactMethod({ value }) {
                         <div>
                             <div className='flex justify-center gap-3 items-center'>
                                 {/* <span className='' >Email</span> */}
-                                <img src={EmailIcon} alt="" className='w-5 h-5' />
+                                <img src={EmailIcon} alt="" className='w-12 h-12' />
                             </div>
                         </div>
                     </>
@@ -24,10 +24,12 @@ function ContactMethod({ value }) {
                 return (
                     <>
                         <div>
-                            <div className='flex justify-center gap-3 items-center'>
-                                {/* <span className='' >Email</span> */}
-                                <img src={InstaIcon} alt="" className='w-10 h-10' />
-                            </div>
+                            <a href="https://www.instagram.com/shibamrm/">
+                                <div className='flex justify-center gap-3 items-center'>
+                                    {/* <span className='' >Email</span> */}
+                                    <img src={InstaIcon} alt="" className='w-10 h-10' />
+                                </div>
+                            </a>
                         </div>
 
                     </>
@@ -37,10 +39,12 @@ function ContactMethod({ value }) {
                 return (
                     <>
                         <div>
-                            <div className='flex justify-center gap-3 items-center'>
-                                {/* <span className='' >Email</span> */}
-                                <img src={LinkedinIcon} alt="" className='w-5 h-5' />
-                            </div>
+                            <a href="https://www.linkedin.com/in/shiba-murmu-664172327/">
+                                <div className='flex justify-center gap-3 items-center'>
+                                    {/* <span className='' >Email</span> */}
+                                    <img src={LinkedinIcon} alt="" className='w-9 h-9' />
+                                </div>
+                            </a>
                         </div>
                     </>
                 )
