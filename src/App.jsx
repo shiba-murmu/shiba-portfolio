@@ -3,6 +3,7 @@ import Profile from './pages/Profile/Profile'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import EduationDetails from './pages/Profile/Education/EduationDetails';
 import SkillDetails from './pages/Skills/SkillDetails';
+import Project from './pages/Projects/Project';
 function Main() {
     return (
         <>
@@ -13,7 +14,9 @@ function Main() {
                 <section>
                     <SkillDetails />
                 </section>
-                <section>Projects</section>
+                <section>
+                    <Project />
+                </section>
                 <section>Contactus</section>
             </div>
         </>
