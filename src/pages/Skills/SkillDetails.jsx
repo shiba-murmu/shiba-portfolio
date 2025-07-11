@@ -98,7 +98,7 @@ function SkillDetails() {
                     <section>
                         <span className='text-xl md:text-4xl md:pl-35 introName pl-2'>Skills</span>
                     </section>
-                    <section className='flex flex-wrap justify-center items-center py-5 gap-5'>
+                    <section className='flex flex-wrap justify-center items-center py-5 gap-5 md:gap-10'>
                         {/* This section is for skills... */}
                         <Skills value='python' />
                         <Skills value='django' />
