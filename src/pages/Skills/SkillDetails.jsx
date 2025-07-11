@@ -10,18 +10,18 @@ function Skills({ value }) {
             case 'python':
                 return (
                     <>
-                        <div className='flex rounded-full shadow-md  p-3 justify-evenly items-center'>
+                        <div className='flex rounded-full shadow-md  hover:cursor-pointer p-3 justify-evenly items-center animate-pulse hover:animate-none'>
                             <div>
                                 <img src={python_icon} alt="python skills" className='w-9 h-9' />
                             </div>
                         </div>
                     </>
                 )
-                
+
             case 'django':
                 return (
                     <>
-                        <div className='flex rounded-full shadow-md p-2 justify-evenly items-center'>
+                        <div className='flex rounded-full shadow-md p-2 hover:cursor-pointer justify-evenly items-center animate-pulse hover:animate-none'>
                             <div>
                                 <Icons value='django' />
                             </div>
@@ -32,7 +32,7 @@ function Skills({ value }) {
             case 'react':
                 return (
                     <>
-                       <div className='flex rounded-full shadow-md  p-3 justify-evenly items-center'>
+                       <div className='flex rounded-full shadow-md  p-3 hover:cursor-pointer justify-evenly items-center animate-pulse hover:animate-none'>
                             <div>
                                 <img src={react_icon} alt="react skills" className='w-9 h-9' />
                             </div>
@@ -43,9 +43,19 @@ function Skills({ value }) {
             case 'javascript':
                 return (
                     <>
-                         <div className='flex rounded-full shadow-md  p-3 justify-evenly items-center'>
+                         <div className='flex rounded-full shadow-md  hover:cursor-pointer p-3 justify-evenly items-center animate-pulse hover:animate-none'>
                             <div>
                                 <img src={javascript_icon} alt="javascript skills" className='w-10 h-10' />
+                            </div>
+                        </div>
+                    </>
+                )
+            case 'tailwind' :
+                return (
+                    <>
+                        <div className='flex rounded-full shadow-md  hover:cursor-pointer p-3 justify-evenly items-center hover:animate-none'>
+                            <div>
+                                <Icons value='tailwind' />
                             </div>
                         </div>
                     </>
@@ -77,7 +87,7 @@ function SkillDetails() {
                         <Skills value='react' />
                         <Skills value='javascript' />
                         <Skills value='react' />
-                        <Skills value='javascript' />
+                        <Skills value='tailwind' />
                     </section>
                 </div>
             </div>
