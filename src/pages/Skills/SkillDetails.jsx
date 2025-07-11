@@ -90,7 +90,7 @@ function SkillDetails() {
             <div className='mt-10'>
                 <div>
                     <section>
-                        <span className='text-2xl introName pl-4'>Skills</span>
+                        <span className='text-xl introName pl-2'>Skills</span>
                     </section>
                     <section className='flex flex-wrap justify-center items-center py-5 gap-5'>
                         {/* This section is for skills... */}
