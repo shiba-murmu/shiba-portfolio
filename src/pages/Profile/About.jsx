@@ -7,13 +7,13 @@ import { Link } from 'react-router-dom';
 function ProfileIntroduction() {
     return (
         <>
-            <div className='text-center m-3'>
-                <span className='introName'>
+            <div className='text-center m-3 md:w-5/6 md:mx-auto'>
+                <span className='md:text-3xl introName'>
                     Shiba Murmu – Software Engineer.
                 </span>
                 <br />
-                <p>
-                    Specializing in full-stack web <br /> development, problem-solving, <br /> and clean, maintainable code.
+                <p className='px-3 pt-1 flex justify-center items-center'>
+                    Hi, I'm Shiba Murmu, a passionate and results-driven Full Stack Developer with a strong foundation in web and software development. I specialize in building efficient, scalable, and user-friendly applications using technologies like React, JavaScript, Python, Django, and Tailwind CSS. With a problem-solving mindset and a love for clean code, I transform ideas into working solutions. I’m continuously learning and exploring new technologies to stay ahead in the fast-paced tech world. Whether it’s developing dynamic frontend experiences or crafting robust backend systems, I bring a blend of creativity, logic, and dedication to every project.
                 </p>
             </div>
         </>
@@ -23,7 +23,7 @@ function ProfileIntroduction() {
 function AboutEducation() {
     return (
         <>
-            <div className='flex flex-col justify-center items-center mt-10'>
+            <div className='flex flex-col md:flex-row justify-center md:justify-evenly items-center mt-10'>
                 <section className='flex flex-col justify-center items-center'>
                     {/* This section is for engineering details... */}
                     <Icons value='Engineering' />
@@ -41,17 +41,61 @@ function AboutEducation() {
                     {/* <div>
                         <span className='text-gray-700 font-bold'>CGPA: 7.45</span>
                     </div> */}
-                    <div className='flex justify-center items-center mt-2'>
+                    <div className='flex md:hidden justify-center items-center mt-2'>
                         <Link to='/education'>
                             <Icons value='right' className='w-10 h-10' />
                         </Link>
                     </div>
+                </section>
+                
+                <section className='hidden not-only:md md:flex flex-col justify-center items-center'>
+                    {/* This section is for engineering details... */}
+                    <Icons value='Engineering' />
+                    <div>
+                        <span className='bold-font introName'>Intermediate +2</span>
+                    </div>
+                    <div>
+                        <span>Central Board Of Secondary Eduation</span>
+                    </div>
 
+                    <div>
+                        <span className='text-gray-700 font-bold'>2019-2021</span>
+                    </div>
+
+                    {/* <div>
+                        <span className='text-gray-700 font-bold'>CGPA: 7.45</span>
+                    </div> */}
+                    {/* <div className='flex justify-center items-center mt-2'>
+                        <Link to='/education'>
+                            <Icons value='right' className='w-10 h-10' />
+                        </Link>
+                    </div> */}
                 </section>
-                <section>
-                    {/* This section is for education details... */}
-                    <Icons value='primary' />
+
+                <section className='hidden not-only:md md:flex flex-col justify-center items-center'>
+                    {/* This section is for engineering details... */}
+                    <Icons value='Engineering' />
+                    <div>
+                        <span className='bold-font introName'>Matriculation</span>
+                    </div>
+                    <div>
+                        <span>BM D.A.V Public School</span>
+                    </div>
+
+                    <div>
+                        <span className='text-gray-700 font-bold'>2009-2019</span>
+                    </div>
+
+                    {/* <div>
+                        <span className='text-gray-700 font-bold'>CGPA: 7.45</span>
+                    </div> */}
+                    {/* <div className='flex justify-center items-center mt-2'>
+                        <Link to='/education'>
+                            <Icons value='right' className='w-10 h-10' />
+                        </Link>
+                    </div> */}
                 </section>
+                
             </div>
         </>
     )
