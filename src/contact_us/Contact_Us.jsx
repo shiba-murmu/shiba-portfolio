@@ -1,16 +1,40 @@
-import React from 'react'
+// for email from the client.
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
+
 import EmailIcon from '/src/assets/email.png'
 import InstaIcon from '/src/assets/instagram.png'
 import LinkedinIcon from '/src/assets/linked.png'
 import Icons from '../components/Icons'
 import { useState } from 'react'
 import './background.css';
+
 function ContactMethod({ value }) {
     const [isPopup, setPopup] = useState(false);
+    const form = useRef();
 
     const PopupOpen = () => setPopup(true);
     const PopupClose = () => setPopup(false);
 
+    const sendEmail = (e) => {
+      e.preventDefault();
+      emailjs.sendForm(
+        'service_tvgav8u',     // replace with your actual Service ID
+        'template_s6tjmcd',    // replace with your actual Template ID
+        form.current,
+        'BSy9cIDFKx-RZ3zhm'      // replace with your actual Public Key
+      ).then(
+        (result) => {
+          alert("Message sent successfully!");
+          form.current.reset();
+        },
+        (error) => {
+          alert("Failed to send message. Please try again.");
+          console.error(error.text);
+        }
+      );
+    };
     const ContactMethodIcon = (val) => {
         switch (val) {
             case 'email':
@@ -18,7 +42,7 @@ function ContactMethod({ value }) {
                     <>
                         <div>
                             <button onClick={PopupOpen}>
-                                <div className='flex justify-center gap-3 items-center'>
+                                <div className='flex justify-center gap-3 hover:cursor-pointer items-center'>
                                     {/* <span className='' >Email</span> */}
                                     <img src={EmailIcon} alt="" className='w-12 h-12' />
                                 </div>
@@ -34,11 +58,12 @@ function ContactMethod({ value }) {
                                         <div className='mb-3'>
                                             <span className='text-2xl bold-font'>Contact Us</span>
                                         </div>
-                                        <form action="">
+                                        <form action="" ref={form} onSubmit={sendEmail}>
                                             <div className="mb-4">
                                                 <input
                                                     type="text"
                                                     id="name"
+                                                    name="name"
                                                     placeholder='Name'
                                                     className="w-full p-2 border border-gray-300 rounded"
                                                 />
@@ -48,6 +73,7 @@ function ContactMethod({ value }) {
                                                 <input
                                                     type="email"
                                                     id="email"
+                                                    name="email"
                                                     placeholder='Email address'
                                                     className="w-full p-2 border border-gray-300 rounded"
                                                 />
@@ -56,6 +82,7 @@ function ContactMethod({ value }) {
 
                                                 <textarea
                                                     id="message"
+                                                    name="message"
                                                     className="w-full h-50 p-2 border border-gray-300 rounded"
                                                 ></textarea>
                                             </div>
