@@ -2,6 +2,7 @@ import React from 'react'
 import EmailIcon from '/src/assets/email.png'
 import InstaIcon from '/src/assets/instagram.png'
 import LinkedinIcon from '/src/assets/linked.png'
+import Icons from '../components/Icons'
 
 function ContactMethod({ value }) {
 
@@ -56,9 +57,12 @@ function ContactMethod({ value }) {
 function Contact_Us() {
     return (
         <>
-            <div className='mt-10'>
-                <div>
-                    <span className='text-xl pl-2 introName bold-font'>Get in Touch</span>
+            <div className='mt-10 pb-10'>
+                <div className='flex justify-center items-center gap-4'>
+                    <span className='text-xl pl-2 bold-font'>Get in Touch</span>
+                    <span>
+                        <Icons value='contact' />
+                    </span>
                 </div>
                 <div className='flex mt-5 justify-center flex-wrap gap-3 items-center'>
                     <ContactMethod value='instagram' />
