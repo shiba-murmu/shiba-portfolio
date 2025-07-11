@@ -67,9 +67,15 @@ function ProjectSpecific() {
 
 
 function Project() {
+    /**
+     * Main function of this page . 
+     */
     return (
         <>
             <div className='mt-10 flex flex-col justify-center items-center gap-5'>
+                <div>
+                    <span>Projects</span>
+                </div>
                 <ProjectSpecific />
                 <ProjectSpecific />
             </div>
