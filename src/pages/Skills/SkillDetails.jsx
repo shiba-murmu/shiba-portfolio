@@ -11,9 +11,9 @@ function Skills({ value }) {
             case 'python':
                 return (
                     <>
-                        <div className='flex rounded-full shadow-md  hover:cursor-pointer p-3 justify-evenly items-center animate-pulse hover:animate-none'>
+                        <div className='flex rounded-full shadow-md md:shadow-none  hover:cursor-pointer p-3 justify-evenly items-center animate-pulse hover:animate-none md:animate-none'>
                             <div>
-                                <img src={python_icon} alt="python skills" className='w-9 h-9' />
+                                <img src={python_icon} alt="python skills" className='w-9 h-9 md:w-30 md:h-30' />
                             </div>
                         </div>
                     </>
@@ -22,7 +22,7 @@ function Skills({ value }) {
             case 'django':
                 return (
                     <>
-                        <div className='flex rounded-full shadow-md p-2 hover:cursor-pointer justify-evenly items-center animate-pulse hover:animate-none'>
+                        <div className='flex rounded-full shadow-md md:shadow-none p-2 hover:cursor-pointer justify-evenly items-center animate-pulse hover:animate-none md:animate-none'>
                             <div>
                                 <Icons value='django' />
                             </div>
@@ -33,9 +33,9 @@ function Skills({ value }) {
             case 'react':
                 return (
                     <>
-                       <div className='flex rounded-full shadow-md  p-3 hover:cursor-pointer justify-evenly items-center animate-pulse hover:animate-none'>
+                        <div className='flex rounded-full md:shadow-none shadow-md  p-3 hover:cursor-pointer justify-evenly items-center animate-pulse hover:animate-none md:animate-none'>
                             <div>
-                                <img src={react_icon} alt="react skills" className='w-9 h-9' />
+                                <img src={react_icon} alt="react skills" className='w-9 h-9 md:w-30 md:h-30' />
                             </div>
                         </div>
                     </>
@@ -44,30 +44,30 @@ function Skills({ value }) {
             case 'javascript':
                 return (
                     <>
-                         <div className='flex rounded-full shadow-md  hover:cursor-pointer p-3 justify-evenly items-center animate-pulse hover:animate-none'>
+                        <div className='flex rounded-full shadow-md md:shadow-none hover:cursor-pointer p-3 justify-evenly items-center animate-pulse hover:animate-none md:animate-none'>
                             <div>
-                                <img src={javascript_icon} alt="javascript skills" className='w-10 h-10' />
+                                <img src={javascript_icon} alt="javascript skills" className='w-10 h-10 md:w-30 md:h-30' />
                             </div>
                         </div>
                     </>
                 )
-            case 'tailwind' :
+            case 'tailwind':
                 return (
                     <>
-                        <div className='flex rounded-full shadow-md  hover:cursor-pointer p-3 justify-evenly items-center hover:animate-none'>
+                        <div className='flex rounded-full shadow-md  md:shadow-none hover:cursor-pointer p-3 justify-evenly items-center hover:animate-none md:animate-none'>
                             <div>
                                 <Icons value='tailwind' />
                             </div>
                         </div>
                     </>
                 )
-            
+
             case 'Git':
                 return (
                     <>
-                        <div className='flex rounded-full shadow-md  hover:cursor-pointer p-3 justify-evenly items-center animate-pulse hover:animate-none'>
+                        <div className='flex rounded-full shadow-md md:shadow-none hover:cursor-pointer p-3 justify-evenly items-center animate-pulse hover:animate-none md:animate-none'>
                             <div>
-                                <img src={Git} alt="Git skills" className='w-10 h-10' />
+                                <img src={Git} alt="Git skills" className='w-10 h-10 md:w-30 md:h-30' />
                             </div>
                         </div>
                     </>
@@ -79,7 +79,13 @@ function Skills({ value }) {
 
     return (
         <>
-            {SkillsIcons(value)}
+            <div className='md:hidden'>
+                {SkillsIcons(value)}
+            </div>
+            <div className='hidden md:block'>
+                {SkillsIcons(value)}
+
+            </div>
         </>
     )
 }
@@ -90,7 +96,7 @@ function SkillDetails() {
             <div className='mt-10'>
                 <div>
                     <section>
-                        <span className='text-xl introName pl-2'>Skills</span>
+                        <span className='text-xl md:text-4xl md:pl-35 introName pl-2'>Skills</span>
                     </section>
                     <section className='flex flex-wrap justify-center items-center py-5 gap-5'>
                         {/* This section is for skills... */}
