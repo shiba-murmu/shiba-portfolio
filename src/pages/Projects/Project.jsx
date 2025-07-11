@@ -1,5 +1,5 @@
 import React from 'react'
-import CareerLiftProject_image from '/src/assets/Careerlift.png'
+import chichat_image from '/src/assets/chichat.png'
 import Icons from '../../components/Icons'
 import { Link } from 'react-router-dom'
 function IconsForProject({ value }) {
@@ -40,21 +40,21 @@ function ProjectSpecific() {
             <div>
                 <div className='flex justify-center items-center'>
                     {/* For heading purpose  */}
-                    <span className='text-2xl bold-font introName'>Career Lift System</span>
+                    <span className='text-2xl bold-font introName'>ChiChat Web App</span>
                 </div>
                 <div className='flex justify-center items-center mt-2'>
                     {/* For image purpose */}
-                    <img src={CareerLiftProject_image} alt="" className='w-80 h-40 shadow-md rounded-2xl' />
+                    <img src={chichat_image} alt="project image" className='w-80 h-40 shadow-md rounded-2xl border border-gray-700' />
                 </div>
                 <div className='flex justify-evenly mt-5'>
                     {/* For buttons purpose */}
-                    <a href="https://github.com/shiba-murmu/career-lift-system-project">
+                    <a href="https://github.com/shiba-murmu/ChiChat">
                         <button className='border-1 rounded-full flex  justify-center items-center gap-2 p-2 px-5'>
                             <span className='bold-font'>Codebase</span>
                             <IconsForProject value='codebase' />
                         </button>
                     </a>
-                    <a href="https://career-lift-system.vercel.app/">
+                    <a href="https://chi-chat-ivory.vercel.app/">
                         <button className='border-1 rounded-full flex  justify-center items-center gap-2 p-2 px-5'>
                             <span className='bold-font'>Live</span>
                             <IconsForProject value='live' />
