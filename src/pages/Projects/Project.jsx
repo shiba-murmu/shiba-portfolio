@@ -48,13 +48,13 @@ function ProjectSpecific() {
                 </div>
                 <div className='flex justify-evenly mt-5'>
                     {/* For buttons purpose */}
-                    <a href="https://github.com/shiba-murmu/ChiChat">
+                    <a href="https://github.com/shiba-murmu/ChiChat" className='hover:cursor-pointer'>
                         <button className='border-1 rounded-full flex  justify-center items-center gap-2 p-2 px-5'>
                             <span className='bold-font'>Codebase</span>
                             <IconsForProject value='codebase' />
                         </button>
                     </a>
-                    <a href="https://chi-chat-ivory.vercel.app/">
+                    <a href="https://chi-chat-ivory.vercel.app/" className='hover:cursor-pointer'>
                         <button className='border-1 rounded-full flex  justify-center items-center gap-2 p-2 px-5'>
                             <span className='bold-font'>Live</span>
                             <IconsForProject value='live' />
