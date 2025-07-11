@@ -29,49 +29,55 @@ function ContactMethod({ value }) {
                         {
                             isPopup && (
                                 // <div className='h-screen w-screen fixed z-50'>
-                                    <div className="fixed inset-0 background-design bg-opacity-50 flex items-center justify-center z-50">
-                                        <div className="bg-white p-6 rounded-lg shadow-lg w-80 text-center relative">
-                                            <form action="">
-                                                <div className="mb-4">
-                                                    
-                                                    <input
-                                                        type="text"
-                                                        id="name"
-                                                        placeholder='Name'
-                                                        className="w-full p-2 border border-gray-300 rounded"
-                                                    />
-                                                </div>
-                                                <div className="mb-4">
-                                                    
-                                                    <input
-                                                        type="email"
-                                                        id="email"
-                                                        placeholder='Email address'
-                                                        className="w-full p-2 border border-gray-300 rounded"
-                                                    />
-                                                </div>
-                                                <div className="mb-4">
-                                                    
-                                                    <textarea
-                                                        id="message"
-                                                        className="w-full p-2 border border-gray-300 rounded"
-                                                    ></textarea>
-                                                </div>
+                                <div className="fixed inset-0 background-design bg-opacity-50 flex items-center justify-center z-50">
+                                    <div className="bg-white p-6 rounded-lg shadow-lg w-80 text-center relative">
+                                        <div>
+                                            <span className='text-2xl bold-font'>Contact Us</span>
+                                        </div>
+                                        <form action="">
+                                            <div className="mb-4">
+
+                                                <input
+                                                    type="text"
+                                                    id="name"
+                                                    placeholder='Name'
+                                                    className="w-full p-2 border border-gray-300 rounded"
+                                                />
+                                            </div>
+                                            <div className="mb-4">
+
+                                                <input
+                                                    type="email"
+                                                    id="email"
+                                                    placeholder='Email address'
+                                                    className="w-full p-2 border border-gray-300 rounded"
+                                                />
+                                            </div>
+                                            <div className="mb-4">
+
+                                                <textarea
+                                                    id="message"
+                                                    className="w-full h-50 p-2 border border-gray-300 rounded"
+                                                ></textarea>
+                                            </div>
+                                            <div className='flex justify-center items-center gap-4'>
+
                                                 <button
                                                     type="submit"
-                                                    className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition"
+                                                    className="px-4 py-1 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition"
                                                 >
                                                     Get in Touch
                                                 </button>
-                                            </form>
-                                            <button
-                                                onClick={PopupClose}
-                                                className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-red-600 transition"
-                                            >
-                                                Close
-                                            </button>
-                                        </div>
+                                                <button
+                                                    onClick={PopupClose}
+                                                    className="px-4 py-1 bg-gray-500 text-white rounded-full hover:bg-red-600 transition"
+                                                >
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </form>
                                     </div>
+                                </div>
                                 // </div>
                             )
                         }
