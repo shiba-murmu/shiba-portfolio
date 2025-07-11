@@ -93,7 +93,7 @@ function Skills({ value }) {
 function SkillDetails() {
     return (
         <>
-            <div className='mt-10'>
+            <div className='mt-10 md:my-30'>
                 <div>
                     <section>
                         <span className='text-xl md:text-4xl md:pl-35 introName pl-2'>Skills</span>
