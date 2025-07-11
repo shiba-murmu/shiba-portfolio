@@ -1,7 +1,7 @@
 // for email from the client.
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-
+////////////////////////////////
 
 import EmailIcon from '/src/assets/email.png'
 import InstaIcon from '/src/assets/instagram.png'
@@ -9,6 +9,8 @@ import LinkedinIcon from '/src/assets/linked.png'
 import Icons from '../components/Icons'
 import { useState } from 'react'
 import './background.css';
+
+import { toast } from 'react-toastify';
 
 function ContactMethod({ value }) {
     const [isPopup, setPopup] = useState(false);
@@ -19,6 +21,10 @@ function ContactMethod({ value }) {
 
     const sendEmail = (e) => {
       e.preventDefault();
+      
+      toast.info("Sending message...");
+
+
       emailjs.sendForm(
         'service_tvgav8u',     // replace with your actual Service ID
         'template_s6tjmcd',    // replace with your actual Template ID
@@ -26,11 +32,11 @@ function ContactMethod({ value }) {
         'BSy9cIDFKx-RZ3zhm'      // replace with your actual Public Key
       ).then(
         (result) => {
-          alert("Message sent successfully!");
+          toast.success("Message sent successfully!");
           form.current.reset();
         },
         (error) => {
-          alert("Failed to send message. Please try again.");
+          toast.error("Error sending message!");
           console.error(error.text);
         }
       );
@@ -66,6 +72,7 @@ function ContactMethod({ value }) {
                                                     name="name"
                                                     placeholder='Name'
                                                     className="w-full p-2 border border-gray-300 rounded"
+                                                    required
                                                 />
                                             </div>
                                             <div className="mb-4">
@@ -76,6 +83,7 @@ function ContactMethod({ value }) {
                                                     name="email"
                                                     placeholder='Email address'
                                                     className="w-full p-2 border border-gray-300 rounded"
+                                                    required
                                                 />
                                             </div>
                                             <div className="mb-4">
@@ -84,6 +92,7 @@ function ContactMethod({ value }) {
                                                     id="message"
                                                     name="message"
                                                     className="w-full h-50 p-2 border border-gray-300 rounded"
+                                                    required
                                                 ></textarea>
                                             </div>
                                             <div className='flex justify-center items-center gap-4'>
