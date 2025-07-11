@@ -5,6 +5,7 @@ import EduationDetails from './pages/Profile/Education/EduationDetails';
 import SkillDetails from './pages/Skills/SkillDetails';
 import Project from './pages/Projects/Project';
 import Contact_Us from './contact_us/Contact_Us';
+import ProjectDetails from './pages/Projects/ProjectDetails';
 
 function Main() {
     return (
@@ -33,6 +34,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Main />} />
                     <Route path="/education" element={<EduationDetails />} />
+                    <Route path='/projectdetails' element={<ProjectDetails />} key='ProjectDetails'></Route>
                 </Routes>
             </BrowserRouter>
         </>

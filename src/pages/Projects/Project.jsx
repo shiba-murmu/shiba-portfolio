@@ -1,6 +1,7 @@
 import React from 'react'
 import CareerLiftProject_image from '/src/assets/Careerlift.png'
-
+import Icons from '../../components/Icons'
+import { Link } from 'react-router-dom'
 function IconsForProject({ value }) {
 
     const Icons = (val) => {
@@ -73,10 +74,15 @@ function Project() {
     return (
         <>
             <div className='mt-10 flex flex-col justify-center items-center gap-5'>
-                <div>
-                    <span>Projects</span>
-                </div>
-                <ProjectSpecific />
+                <Link to={'/projectdetails'}>
+
+                    <div className='flex justify-center w-44 items-center border-1 rounded-full gap-3 p-4'>
+                        <span className='bold-font'>Projects</span>
+                        <span className='flex justify-center items-center'>
+                            <Icons value='projectright' />
+                        </span>
+                    </div>
+                </Link>
                 <ProjectSpecific />
             </div>
         </>
