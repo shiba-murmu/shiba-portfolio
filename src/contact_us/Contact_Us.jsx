@@ -3,8 +3,13 @@ import EmailIcon from '/src/assets/email.png'
 import InstaIcon from '/src/assets/instagram.png'
 import LinkedinIcon from '/src/assets/linked.png'
 import Icons from '../components/Icons'
-
+import { useState } from 'react'
+import './background.css';
 function ContactMethod({ value }) {
+    const [isPopup, setPopup] = useState(false);
+
+    const PopupOpen = () => setPopup(true);
+    const PopupClose = () => setPopup(false);
 
     const ContactMethodIcon = (val) => {
         switch (val) {
@@ -12,11 +17,33 @@ function ContactMethod({ value }) {
                 return (
                     <>
                         <div>
-                            <div className='flex justify-center gap-3 items-center'>
-                                {/* <span className='' >Email</span> */}
-                                <img src={EmailIcon} alt="" className='w-12 h-12' />
-                            </div>
+                            <button onClick={PopupOpen}>
+                                <div className='flex justify-center gap-3 items-center'>
+                                    {/* <span className='' >Email</span> */}
+                                    <img src={EmailIcon} alt="" className='w-12 h-12' />
+                                </div>
+                            </button>
                         </div>
+
+                        {/* Content to show for the popup */}
+                        {
+                            isPopup && (
+                                // <div className='h-screen w-screen fixed z-50'>
+                                    <div className="fixed inset-0 background-design bg-opacity-50 flex items-center justify-center z-50">
+                                        <div className="bg-white p-6 rounded-lg shadow-lg w-80 text-center relative">
+                                            <h2 className="text-lg font-semibold mb-4">This is a popup!</h2>
+                                            <p className="mb-4">You clicked the button, and this layer opened.</p>
+                                            <button
+                                                onClick={PopupClose}
+                                                className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition"
+                                            >
+                                                Close
+                                            </button>
+                                        </div>
+                                    </div>
+                                // </div>
+                            )
+                        }
                     </>
                 )
 

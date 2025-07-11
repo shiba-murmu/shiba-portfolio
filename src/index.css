@@ -7,7 +7,7 @@
 // <uniquifier>: Use a unique and descriptive class name */
 
 * {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     font-family: "Red Hat Text", sans-serif;
     font-optical-sizing: auto;
     /* font-weight: 450; */
