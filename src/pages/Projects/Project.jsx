@@ -13,7 +13,7 @@ function IconsForProject({ value }) {
                         </svg>
                     </>
                 )
-                
+
             case 'live':
                 return (
                     <>
@@ -47,14 +47,18 @@ function ProjectSpecific() {
                 </div>
                 <div className='flex justify-evenly mt-5'>
                     {/* For buttons purpose */}
-                    <button className='border-1 rounded-full flex  justify-center items-center gap-2 p-2 px-5'>
-                        <span className='bold-font'>Codebase</span>
-                        <IconsForProject value='codebase' />
-                    </button>
-                    <button className='border-1 rounded-full flex  justify-center items-center gap-2 p-2 px-5'>
-                        <span className='bold-font'>Live</span>
-                        <IconsForProject value='live' />
-                    </button>
+                    <a href="https://github.com/shiba-murmu/career-lift-system-project">
+                        <button className='border-1 rounded-full flex  justify-center items-center gap-2 p-2 px-5'>
+                            <span className='bold-font'>Codebase</span>
+                            <IconsForProject value='codebase' />
+                        </button>
+                    </a>
+                    <a href="https://career-lift-system.vercel.app/">
+                        <button className='border-1 rounded-full flex  justify-center items-center gap-2 p-2 px-5'>
+                            <span className='bold-font'>Live</span>
+                            <IconsForProject value='live' />
+                        </button>
+                    </a>
                 </div>
             </div>
         </>
@@ -65,7 +69,8 @@ function ProjectSpecific() {
 function Project() {
     return (
         <>
-            <div className='mt-10'>
+            <div className='mt-10 flex flex-col justify-center items-center gap-5'>
+                <ProjectSpecific />
                 <ProjectSpecific />
             </div>
         </>
