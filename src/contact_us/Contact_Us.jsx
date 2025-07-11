@@ -46,7 +46,7 @@ function ContactMethod({ value }) {
             case 'email':
                 return (
                     <>
-                        <div>
+                        <div className='flex'>
                             <button onClick={PopupOpen}>
                                 <div className='flex justify-center gap-3 hover:cursor-pointer items-center' alt="Send email">
                                     {/* <span className='' >Email</span> */}
