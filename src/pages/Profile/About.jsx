@@ -3,7 +3,6 @@ import './about.css';
 // import Icons from '../components/Icons';
 import Icons from '../../components/Icons';
 import { Link } from 'react-router-dom';
-
 function ProfileIntroduction() {
     return (
         <>
@@ -23,7 +22,7 @@ function ProfileIntroduction() {
 function AboutEducation() {
     return (
         <>
-            <div className='flex flex-col md:flex-row justify-center md:justify-evenly items-center mt-10'>
+            <div className='flex flex-col md:flex-row justify-center md:justify-evenly items-center mt-10 md:my-30'>
                 <section className='flex flex-col justify-center items-center'>
                     {/* This section is for engineering details... */}
                     <Icons value='Engineering' />
@@ -48,7 +47,7 @@ function AboutEducation() {
                     </div>
                 </section>
                 
-                <section className='hidden not-only:md md:flex flex-col justify-center items-center'>
+                <section className='hidden not-only:md md:flex flex-col justify-center items-center '>
                     {/* This section is for engineering details... */}
                     <Icons value='Engineering' />
                     <div>
