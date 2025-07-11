@@ -48,7 +48,7 @@ function ContactMethod({ value }) {
                     <>
                         <div>
                             <button onClick={PopupOpen}>
-                                <div className='flex justify-center gap-3 hover:cursor-pointer items-center'>
+                                <div className='flex justify-center gap-3 hover:cursor-pointer items-center' alt="Send email">
                                     {/* <span className='' >Email</span> */}
                                     <img src={EmailIcon} alt="" className='w-12 h-12' />
                                 </div>
@@ -124,7 +124,7 @@ function ContactMethod({ value }) {
                     <>
                         <div>
                             <a href="https://www.instagram.com/shibamrm/">
-                                <div className='flex justify-center gap-3 items-center'>
+                                <div className='flex justify-center gap-3 items-center' alt="Dm me!">
                                     {/* <span className='' >Email</span> */}
                                     <img src={InstaIcon} alt="" className='w-10 h-10' />
                                 </div>
@@ -139,7 +139,7 @@ function ContactMethod({ value }) {
                     <>
                         <div>
                             <a href="https://www.linkedin.com/in/shiba-murmu-664172327/">
-                                <div className='flex justify-center gap-3 items-center'>
+                                <div className='flex justify-center gap-3 items-center' alt="Dm me!">
                                     {/* <span className='' >Email</span> */}
                                     <img src={LinkedinIcon} alt="" className='w-9 h-9' />
                                 </div>
