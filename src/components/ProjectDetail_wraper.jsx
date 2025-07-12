@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Icons from './Icons'
-function ProjectDetail_wraper({ project_heading, project_image, project_text, technologies_used, project_sub_heading , codebase_link , live_link}) {
+function ProjectDetail_wraper({ project_heading, project_image, project_text, technologies_used, project_sub_heading , codebase_link , live_link , live_button_value}) {
     /**
      * This function is the wrapper for the project details
      * 
@@ -58,7 +58,7 @@ function ProjectDetail_wraper({ project_heading, project_image, project_text, te
                     </a>
                     <a href={live_link} className=''>
                         <button className='border-1 hover:cursor-pointer  rounded-full flex  justify-center items-center gap-2 p-1 px-5'>
-                            <span className=''>Live</span>
+                            <span className=''>{live_button_value}</span>
                             <Icons value='live' />
                         </button>
                     </a>
