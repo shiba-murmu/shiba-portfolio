@@ -52,13 +52,13 @@ function ProjectDetail_wraper({ project_heading, project_image, project_text, te
                 <div className='flex justify-evenly md:justify-center md:gap-10 mt-5'>
                     {/* For buttons purpose */}
                     <a href={codebase_link} >
-                        <button className='border-1 hover:cursor-pointer rounded-full flex  justify-center items-center gap-2 p-1 px-5'>
+                        <button className='border-1 hover:cursor-pointer rounded-full flex  justify-center items-center gap-2 p-1 md:p-2 md:px-7 px-5'>
                             <span className=''>Codebase</span>
                             <Icons value='codebase' />
                         </button>
                     </a>
                     <a href={live_link} className=''>
-                        <button className='border-1 hover:cursor-pointer  rounded-full flex  justify-center items-center gap-2 p-1 px-5'>
+                        <button className='border-1 hover:cursor-pointer  rounded-full flex  justify-center items-center gap-2 p-1 md:p-2 md:px-7 px-5'>
                             <span className=''>{live_button_value}</span>
                             <Icons value='live' />
                         </button>
