@@ -4,6 +4,10 @@ import ProjectDetail_wraper from '../../components/ProjectDetail_wraper';
 import careerlift from '/src/assets/careerlift.png'
 import chichat from '/src/assets/chichat.png';
 function Mobile_view_details() {
+    /**
+     * In this function, we're defining two arrays of objects that represent the technologies used for the Career Lift and ChiChat projects, respectively.
+     * In future if more card to add then just simply call this component and pass the value. And describe their used technologies as arrays.
+     */
     const technologyUsedForCareerLift = [
         {
             name: "React.js",
@@ -93,6 +97,12 @@ function Mobile_view_details() {
     const { id } = useParams();
 
     const DynamicallyRederingProject = (value) => {
+        /**
+         * In this function, we're using a switch statement to dynamically render different project details based on the value of the 'id' variable.
+         * 
+         * If in future anyone wants to add a new project, they can add a new case in the switch statement and add the new project details.
+         * Pass the values to the ProjectDetail_wraper component.
+         */
         switch (value) {
             case 'careerlift':
                 return (
