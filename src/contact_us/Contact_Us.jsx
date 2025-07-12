@@ -70,7 +70,7 @@ function ContactMethod({ value }) {
                                                     type="text"
                                                     id="name"
                                                     name="name"
-                                                    placeholder='Name'
+                                                    placeholder='Your name'
                                                     className="w-full p-2 border border-gray-300 rounded"
                                                     required
                                                 />
@@ -81,7 +81,7 @@ function ContactMethod({ value }) {
                                                     type="email"
                                                     id="email"
                                                     name="email"
-                                                    placeholder='Email address'
+                                                    placeholder='Your email address'
                                                     className="w-full p-2 border border-gray-300 rounded"
                                                     required
                                                 />
@@ -91,6 +91,7 @@ function ContactMethod({ value }) {
                                                 <textarea
                                                     id="message"
                                                     name="message"
+                                                    placeholder='Type your messages !!'
                                                     className="w-full h-50 p-2 border border-gray-300 rounded"
                                                     required
                                                 ></textarea>
