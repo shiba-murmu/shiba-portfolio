@@ -158,16 +158,19 @@ function ContactMethod({ value }) {
 
 
 function Contact_Us() {
+    /**
+     * Main function for the page
+     */
     return (
         <>
-            <div className='mt-10 pb-10'>
+            <div className='mt-10 md:mt-20 md:mb-15 pb-10'>
                 <div className='flex justify-center items-center gap-4'>
-                    <span className='text-xl pl-2 bold-font'>Get in Touch</span>
+                    <span className='text-xl pl-2 bold-font md:text-4xl'>Get in Touch</span>
                     <span>
                         <Icons value='contact' />
                     </span>
                 </div>
-                <div className='flex mt-5 justify-center flex-wrap gap-3 items-center'>
+                <div className='flex mt-5 justify-center flex-wrap gap-3 md:gap-10 items-center'>
                     <ContactMethod value='instagram' />
                     <ContactMethod value='email' />
                     <ContactMethod value='linkedin' />
