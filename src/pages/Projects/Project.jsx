@@ -6,7 +6,6 @@ import Icons from '../../components/Icons';
 import buyme_image from '/src/assets/buyme.png';
 import { Link } from 'react-router-dom';
 function IconsForProject({ value }) {
-
     const Icons = (val) => {
         switch (val) {
             case 'codebase':
@@ -24,7 +23,6 @@ function IconsForProject({ value }) {
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
                         </svg>
-
                     </>
                 )
         }
@@ -50,10 +48,12 @@ function ProjectSpecific({ value }) {
                                 {/* For heading purpose  */}
                                 <span className='text-xl md:text-3xl bold-font'>ChiChat Web App ( full-stack )</span>
                             </div>
+
                             <div className='flex justify-center items-center mt-2'>
                                 {/* For image purpose */}
                                 <img src={chichat_image} alt="project image" className='w-80 h-40 md:w-[35rem] md:h-[20rem] shadow-md rounded-2xl border md:border-1  border-gray-700' />
                             </div>
+
                             <div className='flex justify-evenly md:justify-center md:gap-10 mt-5'>
                                 {/* For buttons purpose */}
                                 <a href="https://github.com/shiba-murmu/ChiChat" >
@@ -77,7 +77,6 @@ function ProjectSpecific({ value }) {
                                         <Icons value='right' />
                                     </button>
                                 </Link>
-
                             </div>
                         </div>
                     </>
@@ -116,7 +115,6 @@ function ProjectSpecific({ value }) {
                                         <Icons value='right' />
                                     </button>
                                 </Link>
-
 
                             </div>
                         </div>
@@ -195,11 +193,8 @@ function ProjectSpecific({ value }) {
                                         <Icons value='right' />
                                     </button>
                                 </Link>
-
-
                             </div>
                         </div>
-
                     </>
                 )
         }
@@ -220,15 +215,15 @@ function Project() {
         <>
             <div className='mt-10 flex flex-col justify-center items-center gap-5'>
                 <Link to={'/projectdetails'} className='md:hidden'>
-                    <div className='flex justify-center w-44 items-center border-1 rounded-full gap-3 p-4'>
-                        <span className='bold-font'>Projects</span>
+                    <div className='flex justify-center w-44 items-center border-1 rounded-full gap-3 p-2'>
+                        <span className=''>Projects</span>
                         <span className='flex justify-center items-center'>
                             <Icons value='projectright' />
                         </span>
                     </div>
                 </Link>
                 <div className='hidden not-only:md md:flex justify-start w-full items-center gap-3 pl-35 mb-20'>
-                    <span className='bold-font introName text-4xl'>Projects</span>
+                    <span className=' introName text-4xl'>Projects</span>
                 </div>
 
                 {/* Mobile view purpose here.. */}
