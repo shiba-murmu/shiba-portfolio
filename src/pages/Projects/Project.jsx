@@ -3,6 +3,7 @@ import chichat_image from '/src/assets/chichat.png';
 import careerlift_image from '/src/assets/careerlift.png';
 import calculator_image from '/src/assets/calculator.png';
 import Icons from '../../components/Icons';
+import buyme_image from '/src/assets/buyme.png';
 import { Link } from 'react-router-dom';
 function IconsForProject({ value }) {
 
@@ -102,7 +103,7 @@ function ProjectSpecific({ value }) {
                     </>
                 )
             case 'calculator':
-                return(
+                return (
                     <>
                         <div>
                             <div className='flex justify-center items-center'>
@@ -129,7 +130,38 @@ function ProjectSpecific({ value }) {
                                 </a>
                             </div>
                         </div>
-                    
+                    </>
+                )
+
+            case 'buyme':
+                return (
+                    <>
+                        <div>
+                            <div className='flex justify-center items-center'>
+                                {/* For heading purpose  */}
+                                <span className='text-2xl md:text-3xl bold-font'>Ecommerce website (php)</span>
+                            </div>
+                            <div className='flex justify-center items-center mt-2'>
+                                {/* For image purpose */}
+                                <img src={buyme_image} alt="project image" className='w-80 h-40 md:w-[35rem] md:h-[20rem] shadow-md rounded-2xl border md:border-1  border-gray-700' />
+                            </div>
+                            <div className='flex justify-evenly md:justify-center md:gap-10 mt-5'>
+                                {/* For buttons purpose */}
+                                <a href="https://github.com/shiba-murmu/buyme-project" alt='Check the code' className=''>
+                                    <button className='border-1 hover:cursor-pointer rounded-full flex  justify-center items-center gap-2 p-2 px-5'>
+                                        <span className='bold-font'>Codebase</span>
+                                        <IconsForProject value='codebase' />
+                                    </button>
+                                </a>
+                                <a href="#" className=''>
+                                    <button className='border-1 hover:cursor-pointer  rounded-full flex  justify-center items-center gap-2 p-2 px-5'>
+                                        <span className='bold-font'>Not deployed</span>
+                                        <IconsForProject value='live' />
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+
                     </>
                 )
         }
@@ -168,6 +200,7 @@ function Project() {
                     <ProjectSpecific value='chichat' />
                     <ProjectSpecific value='careerlift' />
                     <ProjectSpecific value='calculator' />
+                    <ProjectSpecific value='buyme' />
                 </div>
             </div>
         </>
