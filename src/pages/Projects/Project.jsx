@@ -1,7 +1,9 @@
-import React from 'react'
-import chichat_image from '/src/assets/chichat.png'
-import Icons from '../../components/Icons'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import chichat_image from '/src/assets/chichat.png';
+import careerlift_image from '/src/assets/careerlift.png';
+import calculator_image from '/src/assets/calculator.png';
+import Icons from '../../components/Icons';
+import { Link } from 'react-router-dom';
 function IconsForProject({ value }) {
 
     const Icons = (val) => {
@@ -34,34 +36,107 @@ function IconsForProject({ value }) {
     )
 }
 
-function ProjectSpecific() {
+function ProjectSpecific({ value }) {
+
+    const SpecifiProject = (val) => {
+
+        switch (val) {
+            case 'chichat':
+                return (
+                    <>
+                        <div>
+                            <div className='flex justify-center items-center'>
+                                {/* For heading purpose  */}
+                                <span className='text-xl md:text-3xl bold-font'>ChiChat Web App ( full-stack )</span>
+                            </div>
+                            <div className='flex justify-center items-center mt-2'>
+                                {/* For image purpose */}
+                                <img src={chichat_image} alt="project image" className='w-80 h-40 md:w-[35rem] md:h-[20rem] shadow-md rounded-2xl border md:border-1  border-gray-700' />
+                            </div>
+                            <div className='flex justify-evenly md:justify-center md:gap-10 mt-5'>
+                                {/* For buttons purpose */}
+                                <a href="https://github.com/shiba-murmu/ChiChat" >
+                                    <button className='border-1 rounded-full flex hover:cursor-pointer  justify-center items-center gap-2 p-2 px-5'>
+                                        <span className='bold-font'>Codebase</span>
+                                        <IconsForProject value='codebase' />
+                                    </button>
+                                </a>
+                                <a href="https://chi-chat-ivory.vercel.app/">
+                                    <button className='border-1 rounded-full flex hover:cursor-pointer  justify-center items-center gap-2 p-2 px-5'>
+                                        <span className='bold-font'>Live</span>
+                                        <IconsForProject value='live' />
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </>
+                )
+            case 'careerlift':
+                return (
+                    <>
+                        <div>
+                            <div className='flex justify-center items-center'>
+                                {/* For heading purpose  */}
+                                <span className='text-2xl md:text-3xl bold-font'>Career Lift ( full-stack )</span>
+                            </div>
+                            <div className='flex justify-center items-center mt-2'>
+                                {/* For image purpose */}
+                                <img src={careerlift_image} alt="project image" className='w-80 h-40 md:w-[35rem] md:h-[20rem] shadow-md rounded-2xl border md:border-1  border-gray-700' />
+                            </div>
+                            <div className='flex justify-evenly md:justify-center md:gap-10 mt-5'>
+                                {/* For buttons purpose */}
+                                <a href="https://github.com/shiba-murmu/career-lift-system-project" className=''>
+                                    <button className='border-1 hover:cursor-pointer rounded-full flex  justify-center items-center gap-2 p-2 px-5'>
+                                        <span className='bold-font'>Codebase</span>
+                                        <IconsForProject value='codebase' />
+                                    </button>
+                                </a>
+                                <a href="https://career-lift-system.vercel.app/" className=''>
+                                    <button className='border-1 hover:cursor-pointer  rounded-full flex  justify-center items-center gap-2 p-2 px-5'>
+                                        <span className='bold-font'>Live</span>
+                                        <IconsForProject value='live' />
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </>
+                )
+            case 'calculator':
+                return(
+                    <>
+                        <div>
+                            <div className='flex justify-center items-center'>
+                                {/* For heading purpose  */}
+                                <span className='text-2xl md:text-3xl bold-font'>Simple calculator ( beginner level)</span>
+                            </div>
+                            <div className='flex justify-center items-center mt-2'>
+                                {/* For image purpose */}
+                                <img src={calculator_image} alt="project image" className='w-80 h-40 md:w-[35rem] md:h-[20rem] shadow-md rounded-2xl border md:border-1  border-gray-700' />
+                            </div>
+                            <div className='flex justify-evenly md:justify-center md:gap-10 mt-5'>
+                                {/* For buttons purpose */}
+                                <a href="https://github.com/shiba-murmu/calculator" className=''>
+                                    <button className='border-1 hover:cursor-pointer rounded-full flex  justify-center items-center gap-2 p-2 px-5'>
+                                        <span className='bold-font'>Codebase</span>
+                                        <IconsForProject value='codebase' />
+                                    </button>
+                                </a>
+                                <a href="https://shiba-murmu.github.io/calculator/" className=''>
+                                    <button className='border-1 hover:cursor-pointer  rounded-full flex  justify-center items-center gap-2 p-2 px-5'>
+                                        <span className='bold-font'>Live</span>
+                                        <IconsForProject value='live' />
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    
+                    </>
+                )
+        }
+    }
     return (
         <>
-            <div>
-                <div className='flex justify-center items-center'>
-                    {/* For heading purpose  */}
-                    <span className='text-2xl md:text-4xl bold-font introName'>ChiChat Web App</span>
-                </div>
-                <div className='flex justify-center items-center mt-2'>
-                    {/* For image purpose */}
-                    <img src={chichat_image} alt="project image" className='w-80 h-40 md:w-[35rem] md:h-[17rem] shadow-md rounded-2xl border md:border-3 border-gray-700' />
-                </div>
-                <div className='flex justify-evenly mt-5'>
-                    {/* For buttons purpose */}
-                    <a href="https://github.com/shiba-murmu/ChiChat" className='hover:cursor-pointer'>
-                        <button className='border-1 rounded-full flex  justify-center items-center gap-2 p-2 px-5'>
-                            <span className='bold-font'>Codebase</span>
-                            <IconsForProject value='codebase' />
-                        </button>
-                    </a>
-                    <a href="https://chi-chat-ivory.vercel.app/" className='hover:cursor-pointer'>
-                        <button className='border-1 rounded-full flex  justify-center items-center gap-2 p-2 px-5'>
-                            <span className='bold-font'>Live</span>
-                            <IconsForProject value='live' />
-                        </button>
-                    </a>
-                </div>
-            </div>
+            {SpecifiProject(value)}
         </>
     )
 }
@@ -87,12 +162,12 @@ function Project() {
                     <span className='bold-font introName text-4xl'>Projects</span>
                 </div>
                 <div className='md:hidden'>
-                    <ProjectSpecific />
+                    <ProjectSpecific value='chichat' />
                 </div>
                 <div className='hidden md:flex flex-wrap justify-center items-center gap-5 md:gap-20'>
-                    <ProjectSpecific />
-                    <ProjectSpecific />
-                    <ProjectSpecific />
+                    <ProjectSpecific value='chichat' />
+                    <ProjectSpecific value='careerlift' />
+                    <ProjectSpecific value='calculator' />
                 </div>
             </div>
         </>
