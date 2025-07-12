@@ -1,6 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import Icons from '../../components/Icons'
 import careerlift from '/src/assets/careerlift.png'
 import chichat from '/src/assets/chichat.png';
 import calculator from '/src/assets/calculator.png';
@@ -11,7 +9,7 @@ function ProjectDetails() {
 
     return (
         <>
-            <div className='flex flex-col justify-center items-center gap-5 py-4'>
+            <div className='md:hidden flex flex-col justify-center items-center gap-5 py-4'>
                 <div>
                     <Project_List project_heading={"ChiChat Web App"} project_image={chichat} codebase_link={"https://github.com/shiba-murmu/ChiChat"} live_link={"https://chi-chat-ivory.vercel.app/"} project_id={"chichat"} live_button_value={"Live"} />
                 </div>
@@ -25,7 +23,9 @@ function ProjectDetails() {
                     <Project_List project_heading={"Simple calculator (beginner level)"} project_image={calculator} codebase_link={"https://github.com/shiba-murmu/portfolio"} live_link={"https://shiba-murmu.vercel.app/"} project_id={"calculator"} live_button_value={"Live"} />
                 </div>
             </div>
-            
+            <div className='hidden  md:flex flex-col justify-center items-center gap-5 py-4 h-screen'>
+                <span className='text-4xl md:text-6xl introName'>Page not found !</span>
+            </div>
         </>
     )
 }
