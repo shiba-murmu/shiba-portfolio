@@ -17,17 +17,17 @@ function ProjectDetail_wraper({ project_heading, project_image, project_text, te
     <>
         <div className='pb-5'>
                 <div className='flex justify-center items-center py-2'>
-                    <span className='bold-font text-2xl '>
+                    <span className='bold-font text-2xl md:text-6xl  '>
                         {project_heading}
                     </span>
                 </div>
 
                 <div className='flex justify-center items-center'>
-                    <img src={project_image} alt="project image" className='w-80 h-40 md:w-[35rem] md:h-[20rem] shadow-md rounded-2xl border md:border-1  border-gray-700 ' />
+                    <img src={project_image} alt="project image" className='w-80 h-40 md:w-[50rem] md:h-[27rem] shadow-md rounded-2xl border md:border-1  border-gray-700 ' />
                 </div>
 
                 <div className='flex justify-center items-center mt-3'>
-                    <span className='bold-font text-lg '>{project_sub_heading}</span>
+                    <span className='bold-font text-lg md:text-xl '>{project_sub_heading}</span>
                 </div>
                 <div>
                     <p className=' p-4 text-center'>{project_text}</p>

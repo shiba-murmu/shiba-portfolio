@@ -4,6 +4,9 @@ import ProjectDetail_wraper from '../../components/ProjectDetail_wraper';
 import careerlift from '/src/assets/careerlift.png'
 import chichat from '/src/assets/chichat.png';
 function Mobile_view_details() {
+
+    const { id } = useParams();
+    
     /**
      * In this function, we're defining two arrays of objects that represent the technologies used for the Career Lift and ChiChat projects, respectively.
      * In future if more card to add then just simply call this component and pass the value. And describe their used technologies as arrays.
@@ -94,7 +97,6 @@ function Mobile_view_details() {
         }
     ]
 
-    const { id } = useParams();
 
     const DynamicallyRederingProject = (value) => {
         /**
@@ -115,7 +117,7 @@ function Mobile_view_details() {
             case 'chichat':
                 return (
                     <>
-                        <ProjectDetail_wraper project_heading={'ChiChat'} project_image={chichat} project_text={`ChiChat is a real-time chat web application designed to provide users with a smooth and responsive messaging experience across all devices. Built using React.js for the frontend and Django for the backend, ChiChat leverages a modern tech stack to deliver high performance and interactivity. The application features a clean and user-friendly interface styled with Tailwind CSS, ensuring mobile responsiveness and cross-platform compatibility. Secure user authentication is handled using JWT (JSON Web Tokens), allowing users to register, log in, and access protected routes securely. ChiChat includes message sending and receiving functionality with a real-time-like experience, and efforts are underway to integrate technologies such as WebSockets or Django Channels for true real-time communication.
+                        <ProjectDetail_wraper project_heading={'ChiChat'} project_sub_heading={"Real-time Chat"} project_image={chichat} project_text={`ChiChat is a real-time chat web application designed to provide users with a smooth and responsive messaging experience across all devices. Built using React.js for the frontend and Django for the backend, ChiChat leverages a modern tech stack to deliver high performance and interactivity. The application features a clean and user-friendly interface styled with Tailwind CSS, ensuring mobile responsiveness and cross-platform compatibility. Secure user authentication is handled using JWT (JSON Web Tokens), allowing users to register, log in, and access protected routes securely. ChiChat includes message sending and receiving functionality with a real-time-like experience, and efforts are underway to integrate technologies such as WebSockets or Django Channels for true real-time communication.
 
                         The UI includes features such as auto-scrolling to the latest message, responsive input boxes, and user profile picture support. While designing for mobile, special attention is being given to resolving layout shifts and keyboard behavior when typing. The project is structured to be scalable, with the potential to expand into group chats, media sharing, or smart message suggestions in the future. Overall, ChiChat is a promising and practical chat solution that demonstrates strong frontend-backend integration, real-time system design, and responsive UI development skills.`} project_technology={"Technology used to designed the project."} technologies_used={technologyUsedForChiChat} codebase_link={"https://github.com/shiba-murmu/ChiChat"}    live_link={"https://chi-chat-ivory.vercel.app/"} live_button_value={"Live"} />
                     </>
@@ -123,16 +125,16 @@ function Mobile_view_details() {
             case 'buyme':
                 return (
                     <>
-                        <div>
-                            corrected
+                        <div className='text-2xl flex justify-center items-center h-screen'>
+                            Details not found !
                         </div>
                     </>
                 )
             case 'calculator':
                 return (
                     <>
-                        <div>
-                            corrected
+                        <div className='text-2xl flex justify-center items-center h-screen'>
+                            Details not found !
                         </div>
                     </>
                 )
