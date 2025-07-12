@@ -220,7 +220,6 @@ function Project() {
         <>
             <div className='mt-10 flex flex-col justify-center items-center gap-5'>
                 <Link to={'/projectdetails'} className='md:hidden'>
-
                     <div className='flex justify-center w-44 items-center border-1 rounded-full gap-3 p-4'>
                         <span className='bold-font'>Projects</span>
                         <span className='flex justify-center items-center'>

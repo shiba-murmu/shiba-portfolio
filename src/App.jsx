@@ -7,6 +7,7 @@ import Project from './pages/Projects/Project';
 import Contact_Us from './contact_us/Contact_Us';
 import ProjectDetails from './pages/Projects/ProjectDetails';
 import Window_view_project_details from './pages/Projects/Window_view_project_details';
+import Mobile_view_details from './pages/Projects/Mobile_view_details';
 import { ToastContainer } from 'react-toastify';
 function Main() {
     return (
@@ -38,6 +39,7 @@ function App() {
                     <Route path="/education" element={<EduationDetails />} />
                     <Route path='/projectdetails' element={<ProjectDetails />} key='ProjectDetails'></Route>
                     <Route path='/window-view-project-detail/:id' element={<Window_view_project_details />}></Route>
+                    <Route path='/mobile-view-project-detail/:id' element={<Mobile_view_details />}></Route>
                 </Routes>
             </BrowserRouter>
         </>
