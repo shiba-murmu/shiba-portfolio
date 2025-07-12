@@ -29,10 +29,6 @@ function Mobile_view_details() {
             name: "JWT (JSON Web Tokens)",
             description: "Used for secure user authentication and maintaining sessions across the frontend and backend."
         },
-        // {
-        //     name: "Email OTP Verification",
-        //     description: "Security feature added during user registration to verify and validate users via email."
-        // },
         {
             name: "PostgreSQL",
             description: "Open-source relational database system for storing structured data like user details, job listings, and more."
@@ -41,10 +37,6 @@ function Mobile_view_details() {
             name: "Monorepo Structure",
             description: "Project architecture where both frontend and backend are managed in the same repository for streamlined development."
         },
-        // {
-        //     name: "ChiChat (Real-Time Chat)",
-        //     description: "A chat feature built using React and Django for user interaction and real-time communication within the platform."
-        // },
     ]
 
     const technologyUsedForChiChat = [
