@@ -9,12 +9,14 @@ import ProjectDetails from './pages/Projects/ProjectDetails';
 import Window_view_project_details from './pages/Projects/Window_view_project_details';
 import Mobile_view_details from './pages/Projects/Mobile_view_details';
 import { ToastContainer } from 'react-toastify';
+import ScrollTop from './components/ScrollTop';
+
 function Main() {
     return (
         <>
             <div>
                 <section>
-                   <Profile />
+                    <Profile />
                 </section>
                 <section>
                     <SkillDetails />
@@ -33,6 +35,7 @@ function App() {
     return (
         <>
             <BrowserRouter>
+                <ScrollTop />
                 <ToastContainer />
                 <Routes>
                     <Route path="/" element={<Main />} />

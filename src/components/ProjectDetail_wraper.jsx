@@ -63,13 +63,6 @@ function ProjectDetail_wraper({ project_heading, project_image, project_text, te
                             <Icons value='live' />
                         </button>
                     </a>
-
-                    {/* <Link to={'/window-view-project-detail/careerlift'}>
-                        <button className='hidden not-only:md border-1 rounded-full md:flex hover:cursor-pointer  justify-center items-center gap-2 p-2 px-5'>
-                            <span className='bold-font'>Details</span>
-                            <Icons value='right' />
-                        </button>
-                    </Link> */}
                 </div>
             </div>
     </>
