@@ -23,15 +23,12 @@ function Project_List({ project_heading, project_image, codebase_link, live_link
                         <Icons value='codebase' />
                     </button>
                 </a>
-
                 <a href={live_link}>
                     <button className='border-1 rounded-full flex hover:cursor-pointer  justify-center items-center gap-2 p-1 px-5'>
                         <span>{live_button_value}</span>
                         <Icons value='live' />
                     </button>
                 </a>
-
-
             </div>
             <div className='flex justify-center items-center my-2'>
                 <Link to={`/mobile-view-project-detail/${project_id}`}>
