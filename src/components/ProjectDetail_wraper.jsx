@@ -15,7 +15,7 @@ function ProjectDetail_wraper({ project_heading, project_image, project_text, te
      */
   return (
     <>
-        <div className='pb-5'>
+        <div className='pb-5 md:mb-20 md:flex justify-center items-center flex-col'>
                 <div className='flex justify-center items-center py-2'>
                     <span className='bold-font text-2xl md:text-6xl  '>
                         {project_heading}
@@ -27,22 +27,23 @@ function ProjectDetail_wraper({ project_heading, project_image, project_text, te
                 </div>
 
                 <div className='flex justify-center items-center mt-3'>
-                    <span className='bold-font text-lg md:text-xl '>{project_sub_heading}</span>
+                    <span className='bold-font text-xl md:text-3xl md: '>{project_sub_heading}</span>
                 </div>
-                <div>
+                <div className='md:w-2/3'>
                     <p className=' p-4 text-center'>{project_text}</p>
                 </div>
 
                 <div>
                     <div className='flex justify-center items-center'>
-                        <span className='bold-font text-lg border-b-2'>Technologies Used</span>
+                        <span className='bold-font text-xl md:text-3xl border-b-2'>Technologies Used</span>
                     </div>
                     <div className='p-4'>
-                        <dl>
+                        <dl className='md:p-4'>
                             {technologies_used.map((tech, index) => (
                                 <div key={index}>
-                                    <dt className="font-bold text-lg text-blue-600">{tech.name}</dt>
-                                    <dd className="ml-4 text-gray-700">{tech.description}</dd>
+                                    <dt className="font-bold text-md 
+                                    md:text-xl md:my-5 pl-4 md:pl-10">{tech.name}</dt>
+                                    <dd className="ml-3 md:my-5 pl-4 md:pl-15 ">{tech.description}</dd>
                                 </div>
                             ))}
                         </dl>

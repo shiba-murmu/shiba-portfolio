@@ -153,7 +153,7 @@ function Window_view_project_details() {
                 )
         }
     }
-
+    
     return (
         <>
             {ConditionalRendering(id)}
