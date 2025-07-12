@@ -45,6 +45,10 @@ function ProjectSpecific({ value }) {
      * @param {In this function calling the card wraper component to render the same card} val 
      * Here just passing the value to the card wraper component.
      * @returns 
+     * 
+     * In future if more card to add then just simply call this component and pass the value.
+     * 
+     *
      */
     const SpecifiProject = (val) => {
 
@@ -118,6 +122,7 @@ function Project() {
                     <ProjectSpecific value='careerlift' />
                     <ProjectSpecific value='calculator' />
                     <ProjectSpecific value='buyme' />
+                    {/* If in future more card to add then just simply call this component and pass the value. */}
                 </div>
             </div>
         </>
