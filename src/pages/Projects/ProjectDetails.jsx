@@ -7,7 +7,6 @@ import calculator from '/src/assets/calculator.png';
 import buyme from '/src/assets/buyme.png';
 import Project_List from '../../components/Project_List';
 
-
 function ProjectDetails() {
 
     return (
