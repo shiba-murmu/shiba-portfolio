@@ -62,12 +62,22 @@ function ProjectSpecific({ value }) {
                                         <IconsForProject value='codebase' />
                                     </button>
                                 </a>
+
                                 <a href="https://chi-chat-ivory.vercel.app/">
                                     <button className='border-1 rounded-full flex hover:cursor-pointer  justify-center items-center gap-2 p-2 px-5'>
                                         <span className='bold-font'>Live</span>
                                         <IconsForProject value='live' />
                                     </button>
                                 </a>
+
+                                <Link to={'/window-view-project-detail/chichat'}>
+                                    <button className='hidden not-only:md border-1 rounded-full md:flex hover:cursor-pointer  justify-center items-center gap-2 p-2 px-5'>
+                                        <span className='bold-font'>Details</span>
+                                        {/* <IconsForProject value='right' /> */}
+                                        <Icons value='right' />
+                                    </button>
+                                </Link>
+
                             </div>
                         </div>
                     </>
@@ -98,6 +108,16 @@ function ProjectSpecific({ value }) {
                                         <IconsForProject value='live' />
                                     </button>
                                 </a>
+
+                                <Link to={'/window-view-project-detail/careerlift'}>
+                                    <button className='hidden not-only:md border-1 rounded-full md:flex hover:cursor-pointer  justify-center items-center gap-2 p-2 px-5'>
+                                        <span className='bold-font'>Details</span>
+                                        {/* <IconsForProject value='right' /> */}
+                                        <Icons value='right' />
+                                    </button>
+                                </Link>
+
+
                             </div>
                         </div>
                     </>
@@ -128,6 +148,15 @@ function ProjectSpecific({ value }) {
                                         <IconsForProject value='live' />
                                     </button>
                                 </a>
+
+                                <Link to={'/window-view-project-detail/calculator'}>
+                                    <button className='hidden not-only:md border-1 rounded-full md:flex hover:cursor-pointer  justify-center items-center gap-2 p-2 px-5'>
+                                        <span className='bold-font'>Details</span>
+                                        {/* <IconsForProject value='right' /> */}
+                                        <Icons value='right' />
+                                    </button>
+                                </Link>
+
                             </div>
                         </div>
                     </>
@@ -159,6 +188,15 @@ function ProjectSpecific({ value }) {
                                         <IconsForProject value='live' />
                                     </button>
                                 </a>
+                                <Link to={'/window-view-project-detail/buyme'}>
+                                    <button className='hidden not-only:md border-1 rounded-full md:flex hover:cursor-pointer  justify-center items-center gap-2 p-2 px-5'>
+                                        <span className='bold-font'>Details</span>
+                                        {/* <IconsForProject value='right' /> */}
+                                        <Icons value='right' />
+                                    </button>
+                                </Link>
+
+
                             </div>
                         </div>
 
@@ -193,9 +231,13 @@ function Project() {
                 <div className='hidden not-only:md md:flex justify-start w-full items-center gap-3 pl-35 mb-20'>
                     <span className='bold-font introName text-4xl'>Projects</span>
                 </div>
+
+                {/* Mobile view purpose here.. */}
                 <div className='md:hidden'>
                     <ProjectSpecific value='chichat' />
                 </div>
+                {/* Only to use here to implement the mobile view... */}
+
                 <div className='hidden md:flex flex-wrap justify-center items-center gap-5 md:gap-20'>
                     <ProjectSpecific value='chichat' />
                     <ProjectSpecific value='careerlift' />
