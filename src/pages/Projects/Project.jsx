@@ -104,7 +104,7 @@ function Project() {
                         </span>
                     </div>
                 </Link>
-                <div className='hidden not-only:md md:flex justify-start w-full items-center gap-3 pl-35 mb-20'>
+                <div className='hidden not-only:md md:flex justify-start w-full items-center gap-3 pl-35'>
                     <span className=' introName text-4xl'>Projects</span>
                 </div>
 
