@@ -56,7 +56,7 @@ function ProjectSpecific({ value }) {
             case 'chichat':
                 return (
                     <>
-                        <Project_card_window project_heading={'ChiChat'} project_image={chichat_image} codebase_link={'https://github.com/shiba-murmu/ChiChat'} live_link={'https://chi-chat-ivory.vercel.app/'} project_id={'chichat'} live_button_value={'Live'} />
+                        <Project_card_window project_heading={'ChiChat'} project_image={chichat_image} codebase_link={'https://github.com/shiba-murmu/new-version-chichat'} live_link={'https://new-version-chichat.vercel.app/'} project_id={'chichat'} live_button_value={'Developing'} />
                     </>
                 )
             case 'careerlift':

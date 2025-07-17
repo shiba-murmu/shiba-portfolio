@@ -11,10 +11,10 @@ function ProjectDetails() {
         <>
             <div className='md:hidden flex flex-col justify-center items-center gap-5 py-4'>
                 <div>
-                    <Project_List project_heading={"ChiChat Web App"} project_image={chichat} codebase_link={"https://github.com/shiba-murmu/ChiChat"} live_link={"https://chi-chat-ivory.vercel.app/"} project_id={"chichat"} live_button_value={"Live"} />
+                    <Project_List project_heading={"ChiChat Web App"} project_image={chichat} codebase_link={"https://github.com/shiba-murmu/new-version-chichat"} live_link={"https://new-version-chichat.vercel.app/"} project_id={"chichat"} live_button_value={"Developing"} />
                 </div>
                 <div>
-                    <Project_List project_heading={"Career Lift"} project_image={careerlift} codebase_link={"https://github.com/shiba-murmu/Career-Lift"} live_link={"https://career-lift.vercel.app/"} project_id={"careerlift"} live_button_value={"Live"} />
+                    <Project_List project_heading={"Career Lift"} project_image={careerlift} codebase_link={"https://github.com/shiba-murmu/career-lift-system-project"} live_link={"https://career-lift-system.vercel.app/"} project_id={"careerlift"} live_button_value={"Live"} />
                 </div>
                 <div>
                     <Project_List project_heading={"BuyMe"} project_image={buyme} codebase_link={"https://github.com/shiba-murmu/BuyMe"} live_link={"#"} project_id={"buyme"} live_button_value={'Not deployed'}/>
