@@ -124,7 +124,7 @@ function ContactMethod({ value }) {
                 return (
                     <>
                         <div>
-                            <a href="https://www.instagram.com/shibamrm/">
+                            <a href="https://www.instagram.com/shibajsr/?next=%2F">
                                 <div className='flex justify-center gap-3 items-center' alt="Dm me!">
                                     {/* <span className='' >Email</span> */}
                                     <img src={InstaIcon} alt="" className='w-10 h-10' />
