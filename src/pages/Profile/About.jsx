@@ -1,9 +1,8 @@
 import React from 'react'
 import './about.css';
-// import Icons from '../components/Icons';
 import Icons from '../../components/Icons';
-import { resume } from '../../assets/shibaresume.pdf';
 import { Link } from 'react-router-dom';
+// import { resume } from '/shiba.pdf';
 function ProfileIntroduction() {
     return (
         <>
@@ -37,17 +36,13 @@ function AboutEducation() {
                     <div>
                         <span className='text-gray-700 font-bold'>2021-2025</span>
                     </div>
-
-                    {/* <div>
-                        <span className='text-gray-700 font-bold'>CGPA: 7.45</span>
-                    </div> */}
                     <div className='flex md:hidden justify-center items-center mt-2'>
                         <Link to='/education'>
                             <Icons value='right' className='w-10 h-10' />
                         </Link>
                     </div>
                 </section>
-                
+
                 <section className='hidden not-only:md md:flex flex-col justify-center items-center '>
                     {/* This section is for engineering details... */}
                     <Icons value='Engineering' />
@@ -61,15 +56,6 @@ function AboutEducation() {
                     <div>
                         <span className='text-gray-700 font-bold'>2019-2021</span>
                     </div>
-
-                    {/* <div>
-                        <span className='text-gray-700 font-bold'>CGPA: 7.45</span>
-                    </div> */}
-                    {/* <div className='flex justify-center items-center mt-2'>
-                        <Link to='/education'>
-                            <Icons value='right' className='w-10 h-10' />
-                        </Link>
-                    </div> */}
                 </section>
 
                 <section className='hidden not-only:md md:flex flex-col justify-center items-center'>
@@ -85,17 +71,8 @@ function AboutEducation() {
                     <div>
                         <span className='text-gray-700 font-bold'>2009-2019</span>
                     </div>
-
-                    {/* <div>
-                        <span className='text-gray-700 font-bold'>CGPA: 7.45</span>
-                    </div> */}
-                    {/* <div className='flex justify-center items-center mt-2'>
-                        <Link to='/education'>
-                            <Icons value='right' className='w-10 h-10' />
-                        </Link>
-                    </div> */}
                 </section>
-                
+
             </div>
         </>
     )
@@ -107,7 +84,7 @@ function DownloadResume() {
             <div className='flex justify-center items-center mt-10'>
                 <div className='flex justify-center items-center gap-3 border-1 rounded-full p-2 md:p-3 w-40'>
                     {/* There is need to add a resume pdf for to working the download buttons here. */}
-                    <a href={resume} download={'shibamurmu_resume.pdf'} className=''>
+                    <a href='/shiba.pdf' download='shibamurmu_resume.pdf' className=''>
                         Resume
                     </a>
                     <Icons value='download' className='w-10 h-10' />
