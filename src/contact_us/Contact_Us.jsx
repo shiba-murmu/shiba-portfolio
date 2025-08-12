@@ -139,7 +139,7 @@ function ContactMethod({ value }) {
                 return (
                     <>
                         <div>
-                            <a href="https://www.linkedin.com/in/shiba-murmu-664172327/">
+                            <a href="https://www.linkedin.com/in/shibamurmu/">
                                 <div className='flex justify-center gap-3 items-center' alt="Dm me!">
                                     {/* <span className='' >Email</span> */}
                                     <img src={LinkedinIcon} alt="" className='w-9 h-9' />
